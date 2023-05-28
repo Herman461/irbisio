@@ -328,6 +328,46 @@ svg {
   line-height: 115%;
 }
 
+@-webkit-keyframes base-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 25%);
+    transform: translate(0, 25%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes base-animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+  }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: translate(0, 25%);
+    transform: translate(0, 25%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
 .intro__title {
   font-weight: 500;
   line-height: 105%;
@@ -631,6 +671,39 @@ svg {
 
   .menu-footer__link br {
     display: none;
+  }
+
+  .intro__title span {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+  }
+
+  .intro__title span.active {
+    -webkit-animation: 1s linear 0s 1 alternate base-animation;
+    animation: 1s linear 0s 1 alternate base-animation;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+
+  .intro__bottom {
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+  }
+
+  .intro__bottom.active {
+    -webkit-animation: 1s linear 0s 1 alternate base-animation;
+    animation: 1s linear 0s 1 alternate base-animation;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 
   .intro__down {
