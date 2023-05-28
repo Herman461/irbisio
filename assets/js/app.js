@@ -93,7 +93,7 @@ window.addEventListener('DOMContentLoaded', function() {
     const animItems = document.querySelectorAll('.anim-items');
 
     if (animItems.length > 0) {
-        window.addEventListener('scroll', animOnScroll);
+        document.body.addEventListener('scroll', animOnScroll);
         function animOnScroll() {
             for (let index = 0; index < animItems.length; index++) {
                 const animItem = animItems[index];
