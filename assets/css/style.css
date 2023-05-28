@@ -107,13 +107,7 @@ body {
   font-size: 24px;
   font-family: "NeueMontreal", sans-serif;
   color: #111111;
-  overflow-x: hidden;
-  overflow-y: auto;
   background: #FAFAFA;
-}
-
-html {
-  overflow: hidden;
 }
 
 img {
