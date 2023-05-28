@@ -110,6 +110,10 @@ body {
   background: #FAFAFA;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 img {
   pointer-events: none;
 }
